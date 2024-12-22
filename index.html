@@ -16,6 +16,11 @@
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+  
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- GSAP ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
   </head>
   <body">
     <!-- Header Start-->
@@ -65,35 +70,67 @@
       <div class="container">
         <div class="flex flex-col md:justify-center">
           <div class="md:order-1">
-            <h4 class="text-dark text-xl font-medium mb-2 md:mb-4 md:text-xl md:text-center"><span class="text-pri">></span>_Hello</h4>
-            <h1 class="font-bold text-3xl font-pri mt-1 md:text-center md:text-5xl lg:text-6xl">
-              I'm <span class="text-pri underline font-extrabold">Muhammad Sirat,</span><br />Front-End Developer &<br /><span class="text-pri bg-sec">UI Designer</span>
+            <h4
+              id="subheading"
+              class="text-dark text-xl font-medium mb-2 md:mb-4 md:text-xl md:text-center"
+            >
+              <span class="text-pri">></span>_Hello
+            </h4>
+            <h1
+              id="heading"
+              class="font-bold text-3xl font-pri mt-1 md:text-center md:text-5xl lg:text-6xl"
+            >
+              I'm
+              <span class="text-pri underline font-extrabold">Muhammad Sirat,</span
+              ><br />Front-End Developer &
+              <br /><span class="text-pri bg-sec">UI Designer</span>
             </h1>
           </div>
-
-          <div class="flex mt-6 items-center -center md:order-3 md:-mt-20 md:bg-white md:py-1 md:px-1 md:mx-auto md:rounded-full md:shadow-2xl group">
-            <a href="#projects" class="font-medium text-white text-xl bg-pri rounded-lg py-3 px-12 mr-4 hover:shadow-xl hover:opacity-80 transition duration-300 ease-in-out md:rounded-full group-hover:text-slate-200">Portfolio</a>
-
+    
+          <div
+            class="z-20 flex mt-6 items-center -center md:order-3 md:-mt-20 md:bg-white md:py-1 md:px-1 md:mx-auto md:rounded-full md:shadow-2xl group"
+          >
+            <a
+              href="#projects"
+              class="font-medium text-white text-xl bg-pri rounded-lg py-3 px-12 mr-4 hover:shadow-xl hover:opacity-80 transition duration-300 ease-in-out md:rounded-full group-hover:text-slate-200"
+            >
+              Portfolio
+            </a>
+    
             <div class="flex space-x-2">
-              <a href="https://bit.ly/siratGithub" target="_blank"
-                ><i data-feather="github" class="w-10 h-10 py-2 border-2 rounded-full border-pri text-pri hover:bg-pri hover:text-white transition duration-300 ease-in-out hover:shadow-lg"></i
-              ></a>
-              <a href="https://bit.ly/syiratdribbble" target="_blank"
-                ><i data-feather="dribbble" class="w-10 h-10 py-2 border-2 rounded-full border-pri text-pri hover:bg-pri hover:text-white transition duration-300 ease-in-out hover:shadow-lg"></i
-              ></a>
-              <a href="https://bit.ly/siratlinkedin" target="_blank"
-                ><i data-feather="linkedin" class="w-10 h-10 py-2 border-2 rounded-full border-pri text-pri hover:bg-pri hover:text-white transition duration-300 ease-in-out hover:shadow-lg"></i
-              ></a>
+              <a href="https://bit.ly/siratGithub" target="_blank">
+                <i
+                  data-feather="github"
+                  class="w-10 h-10 py-2 border-2 rounded-full border-pri text-pri hover:bg-pri hover:text-white transition duration-300 ease-in-out hover:shadow-lg"
+                ></i>
+              </a>
+              <a href="https://bit.ly/syiratdribbble" target="_blank">
+                <i
+                  data-feather="dribbble"
+                  class="w-10 h-10 py-2 border-2 rounded-full border-pri text-pri hover:bg-pri hover:text-white transition duration-300 ease-in-out hover:shadow-lg"
+                ></i>
+              </a>
+              <a href="https://bit.ly/siratlinkedin" target="_blank">
+                <i
+                  data-feather="linkedin"
+                  class="w-10 h-10 py-2 border-2 rounded-full border-pri text-pri hover:bg-pri hover:text-white transition duration-300 ease-in-out hover:shadow-lg"
+                ></i>
+              </a>
             </div>
           </div>
-
+    
           <div class="md:order-2 md:-mt-14 lg:-mt-10">
-            <div class="bg-gradient-to-t from-pri px-16 pt-14 md:pt-5 lg:pt-0">
-              <img src="src/assets/sirat.png" alt="Sirat" class="max-w-46 mx-auto md:max-w-80 lg:max-w-96" />
+            <div class="bg-gradient-to-t from-pri px-16 pt-14 md:pt-5 lg:pt-0 overflow-hidden">
+              <img
+                src="src/assets/sirat.png"
+                alt="Sirat"
+                class="max-w-46 mx-auto md:max-w-80 lg:max-w-96"
+              />
             </div>
           </div>
         </div>
       </div>
+    
 
       <div class="bg-sec w-full overflow-hidden shadow-lg py-4 md:mt-5 md:py-6">
         <div class="inline-block whitespace-nowrap animate-marquee" id="marquee">
@@ -152,7 +189,7 @@
 
         <div class="w-full flex flex-wrap justify-center">
           <div class="p-4 md:w-1/2 lg:w-1/3">
-            <div class="lg:relative group overflow-hidden mb-12 lg:rounded-lg">
+            <div class="animation-projects lg:relative group overflow-hidden mb-12 lg:rounded-lg">
               <img src="src/assets/AgencyWeb.png" alt="Agency Website" class="w-full drop-shadow-xl rounded-xl lg:rounded-lg" />
               <div class="lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:bg-gradient-to-t from-dark via-dark/95 lg:px-4 lg:py-14 lg:translate-y-full lg:group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
                 <h3 class="font-pri font-bold text-md text-sec mt-6 mb-2 lg:text-center">Agency Website</h3>
@@ -161,7 +198,7 @@
             </div>
           </div>
           <div class="p-4 md:w-1/2 lg:w-1/3">
-            <div class="lg:relative group overflow-hidden mb-12 lg:rounded-lg">
+            <div class="animation-projects lg:relative group overflow-hidden mb-12 lg:rounded-lg">
               <img src="src/assets/Direct Messaging.png" alt="Chat app UI" class="w-full drop-shadow-xl rounded-xl lg:rounded-lg" />
               <div class="lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:bg-gradient-to-t from-dark via-dark/95 lg:px-4 lg:py-14 lg:translate-y-full lg:group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
                 <h3 class="font-pri font-bold text-md text-sec mt-6 mb-2 lg:text-center">Chat app UI</h3>
@@ -170,7 +207,7 @@
             </div>
           </div>
           <div class="p-4 md:w-1/2 lg:w-1/3">
-            <div class="lg:relative group overflow-hidden mb-12 lg:rounded-lg">
+            <div class="animation-projects lg:relative group overflow-hidden mb-12 lg:rounded-lg">
               <img src="src/assets/Deadsquad.png" alt="Deadsquad Vape Web" class="w-full drop-shadow-xl rounded-xl lg:rounded-lg" />
               <div class="lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:bg-gradient-to-t from-dark via-dark/95 lg:px-4 lg:py-14 lg:translate-y-full lg:group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
                 <h3 class="font-pri font-bold text-md text-sec mt-6 mb-2 lg:text-center">Deadsquad Vape Web</h3>
@@ -179,7 +216,7 @@
             </div>
           </div>
           <div class="p-4 md:w-1/2 lg:w-1/3">
-            <div class="lg:relative group overflow-hidden mb-12 lg:rounded-lg">
+            <div class="animation-projects lg:relative group overflow-hidden mb-12 lg:rounded-lg">
               <img src="src/assets/E-commerce.png" alt="Product Page UI" class="w-full drop-shadow-xl rounded-xl lg:rounded-lg" />
               <div class="lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:bg-gradient-to-t from-dark via-dark/95 lg:px-4 lg:py-14 lg:translate-y-full lg:group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
                 <h3 class="font-pri font-bold text-md text-sec mt-6 mb-2 lg:text-center">Product Page UI</h3>
@@ -188,7 +225,7 @@
             </div>
           </div>
           <div class="p-4 md:w-1/2 lg:w-1/3">
-            <div class="lg:relative group overflow-hidden mb-12 lg:rounded-lg">
+            <div class="animation-projects lg:relative group overflow-hidden mb-12 lg:rounded-lg">
               <img src="src/assets/Home Monitoring Dashboard.png" alt="Home Monitoring Dashboard UI" class="w-full drop-shadow-xl rounded-xl lg:rounded-lg" />
               <div class="lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:bg-gradient-to-t from-dark via-dark/95 lg:px-4 lg:py-14 lg:translate-y-full lg:group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
                 <h3 class="font-pri font-bold text-md text-sec mt-6 mb-2 lg:text-center">Home Monitoring Dashboard UI</h3>
@@ -197,7 +234,7 @@
             </div>
           </div>
           <div class="p-4 md:w-1/2 lg:w-1/3">
-            <div class="lg:relative group overflow-hidden mb-12 lg:rounded-lg">
+            <div class="animation-projects lg:relative group overflow-hidden mb-12 lg:rounded-lg">
               <img src="src/assets/Ecommerce App.png" alt="Laptop Store UI" class="w-full drop-shadow-xl rounded-xl lg:rounded-lg" />
               <div class="lg:absolute lg:bottom-0 lg:left-0 lg:right-0 lg:bg-gradient-to-t from-dark via-dark/95 lg:px-4 lg:py-14 lg:translate-y-full lg:group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
                 <h3 class="font-pri font-bold text-md text-sec mt-6 mb-2 lg:text-center">Laptop Store Wireframe & UI</h3>
@@ -501,5 +538,8 @@
 
     <!-- jQuery -->
     <script src="script.js"></script>
+
+    <!-- GSAP -->
+     <script src="gsap.js"></script>
   </body>
 </html>
