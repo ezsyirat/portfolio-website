@@ -20,7 +20,7 @@ gsap.from("#heading .text-pri", {
   x: 200, // Teks ungu muncul dari kanan
   opacity: 0, // Awalnya tidak terlihat
   stagger: 0.2, // Teks ungu muncul satu per satu
-  duration: 1, // Durasi masing-masing animasi
+  duration: 0.5, // Durasi masing-masing animasi
   delay: 1.2, // Tunda sedikit setelah teks hitam muncul
   ease: "power4.out", // Animasi halus
 });
@@ -38,7 +38,7 @@ gsap.fromTo(
     scale: 1, // Gambar mengecil ke ukuran normal
     opacity: 1, // Gambar menjadi terlihat
     duration: 1, // Durasi animasi
-    delay: 1.8, // Tunda setelah teks selesai muncul
+    delay: 1.5, // Tunda setelah teks selesai muncul
     ease: "power4.out", // Animasi halus
   }
 );
@@ -69,9 +69,9 @@ animationProjects.forEach((project, index) => {
   gsap.from(project, {
     scrollTrigger: {
       trigger: project, // Setiap elemen sebagai pemicu
-      start: "top 80%", // Animasi dimulai saat elemen 80% dari viewport
-      end: "top 5%", // Animasi selesai saat elemen mencapai 20% dari viewport
-      toggleActions: "play reverse play reverse", // Muncul saat scroll ke bawah, hilang saat scroll ke atas
+      start: "top 90%", // Animasi dimulai saat elemen 80% dari viewport
+      end: "top 10%", // Animasi selesai saat elemen mencapai 20% dari viewport
+      toggleActions: "play none none none", // Muncul saat scroll ke bawah, hilang saat scroll ke atas
     },
     opacity: 0, // Awalnya tidak terlihat
     y: 100, // Dimulai dari bawah
@@ -95,7 +95,7 @@ gsap.from("#about .flex-wrap > div", {
   },
   opacity: 0, // Awalnya tidak terlihat
   y: 100, // Dimulai dengan posisi sedikit di bawah
-  duration: 1.5, // Durasi animasi
+  duration: 1.2, // Durasi animasi
   ease: "power4.out", // Efek animasi halus
   stagger: 0.5, // Penundaan antar elemen untuk efek bertahap
 });
@@ -132,7 +132,7 @@ gsap.from("#contact .space-y-6 > div", {
   duration: 1, // Durasi animasi
   delay: 1,
   ease: "power4.out", // Efek animasi halus
-  stagger: 0.3, // Penundaan antara elemen
+  stagger: 0.2, // Penundaan antara elemen
 });
 
 // Animasi untuk form
@@ -146,6 +146,6 @@ gsap.from("#contact form", {
   opacity: 0, // Awalnya tidak terlihat
   x: 100, // Masuk dari kanan
   duration: 1, // Durasi animasi
-  delay: 2,
+  delay: 1.5,
   ease: "power4.out", // Efek animasi halus
 });
