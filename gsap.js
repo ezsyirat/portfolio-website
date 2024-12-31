@@ -95,7 +95,7 @@ gsap.from("#about .flex-wrap > div", {
   },
   opacity: 0, // Awalnya tidak terlihat
   y: 100, // Dimulai dengan posisi sedikit di bawah
-  duration: 1.2, // Durasi animasi
+  duration: 1.5, // Durasi animasi
   ease: "power4.out", // Efek animasi halus
   stagger: 0.5, // Penundaan antar elemen untuk efek bertahap
 });
